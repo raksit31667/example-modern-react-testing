@@ -1,14 +1,11 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import { toggleTheme } from '../../redux/actions/themeActions'
 import styles from './ThemeToggle.module.css'
 
-export default function ThemeToggle() {
-  const theme = useSelector((state) => state.theme.theme)
-  const dispatch = useDispatch()
-
+function ThemeToggle({ theme, toggleTheme }) {
   const handleToggle = () => {
-    dispatch(toggleTheme())
+    toggleTheme()
   }
 
   return (
@@ -27,3 +24,13 @@ export default function ThemeToggle() {
     </button>
   )
 }
+
+const mapStateToProps = (state) => ({
+  theme: state.theme.theme,
+})
+
+const mapDispatchToProps = {
+  toggleTheme,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ThemeToggle)
