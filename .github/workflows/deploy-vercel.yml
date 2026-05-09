@@ -13,10 +13,6 @@ jobs:
   deploy-production:
     name: Deploy Production
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: examples/modern-nextjs
-    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
