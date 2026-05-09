@@ -1,0 +1,108 @@
+/* CSS Variables for theming */
+.App {
+  --primary-color: #1e40af;
+  --secondary-color: #7c3aed;
+  --surface-color: #ffffff;
+  --background-color: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --hover-color: #f3f4f6;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark theme overrides */
+.App.dark-theme {
+  --primary-color: #60a5fa;
+  --secondary-color: #a78bfa;
+  --surface-color: #1f2937;
+  --background-color: #111827;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #374151;
+  --hover-color: #374151;
+}
+
+.App-header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content > div:first-child {
+  text-align: left;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  background-color: #ef4444;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.App-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboard-section {
+  background: var(--surface-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.dashboard-section.full-width {
+  grid-column: 1 / -1;
+}
+
+.App-footer {
+  background-color: #fef3c7;
+  border-top: 2px solid #f59e0b;
+  padding: 1rem;
+  text-align: center;
+  color: #92400e;
+  font-size: 0.875rem;
+}
+
+.App-footer p {
+  margin: 0.25rem 0;
+}
+
+.App-footer p:first-child {
+  font-weight: 600;
+}

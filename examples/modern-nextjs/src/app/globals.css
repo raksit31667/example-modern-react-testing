@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light theme colors (default) */
+  --color-primary: #1e40af;
+  --color-secondary: #7c3aed;
+  --color-surface: #ffffff;
+  --color-background: #f9fafb;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  
+  /* Status colors (theme-independent) */
+  --color-status-pending: #f59e0b;
+  --color-status-completed: #10b981;
+  --color-status-failed: #ef4444;
+  --color-status-cancelled: #6b7280;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --color-primary: #60a5fa;
+  --color-secondary: #a78bfa;
+  --color-surface: #1f2937;
+  --color-background: #111827;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-border: #374151;
+}
+
+/* Smooth theme transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Prevent button background transitions on hover */
+button {
+  transition-property: border-color, color, opacity, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
