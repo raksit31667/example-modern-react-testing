@@ -1,2 +1,5 @@
 .vercel
 .env*.local
+
+# React Core Concepts - allow all source files
+!examples/react-core-concepts/
