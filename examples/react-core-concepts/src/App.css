@@ -143,6 +143,27 @@ body {
   object-fit: cover;
 }
 
+/* Styling Demo - CSS Classes */
+.styled-card {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff9800;
+}
+
+.styled-card-title {
+  color: #ff9800;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.styled-card-content {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app-header h1 {
