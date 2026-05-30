@@ -119,6 +119,30 @@ body {
   font-size: 1.1rem;
 }
 
+.card {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.card h2 {
+  color: #667eea;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #666;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app-header h1 {

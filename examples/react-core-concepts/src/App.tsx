@@ -1,5 +1,6 @@
 import './App.css';
 import ComponentsDemo from './components/01-ComponentsDemo';
+import JSXDemo from './components/02-JSXDemo';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <main className="app-main">
         <ComponentsDemo />
+        <JSXDemo />
       </main>
     </div>
   );
