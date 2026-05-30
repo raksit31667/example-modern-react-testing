@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "Atomic Commit": {
+      "source": "chanwit/tdg",
+      "sourceType": "github",
+      "skillPath": "skills/atomic/SKILL.md",
+      "computedHash": "dba28244923a873e2c5e66614cefd03fdee48f3819eb0f4e32bb4a52f5c22a8c"
+    },
     "brainstorming": {
       "source": "obra/superpowers",
       "sourceType": "github",
