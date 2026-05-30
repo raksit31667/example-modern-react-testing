@@ -168,6 +168,21 @@ npm run build
 npm start
 ```
 
+### 6. Analyze Bundle Size
+
+```bash
+# Analyze both client and server bundles
+npm run analyze
+
+# Analyze only client bundle
+npm run analyze:client
+
+# Analyze only server bundle
+npm run analyze:server
+```
+
+This will build your application and open interactive bundle analysis reports in your browser. See the [Bundle Analysis Guide](../../docs/bundle-analysis-guide.md) for detailed information.
+
 ## Key Files to Review
 
 ### 1. Server Component with Data Fetching

@@ -91,6 +91,18 @@ npm test
 npm run build
 ```
 
+### 5. Analyze Bundle Size
+
+```bash
+# Build and analyze in one command
+npm run analyze:build
+
+# Or if you already have a build
+npm run analyze
+```
+
+This will open an interactive treemap visualization showing your bundle composition. See the [Bundle Analysis Guide](../../docs/bundle-analysis-guide.md) for detailed information.
+
 ## Key Files to Review
 
 ### 1. Class Component Example
