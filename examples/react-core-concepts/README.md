@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# React Core Concepts Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive demonstration of fundamental React concepts built with Vite + React + TypeScript.
 
-Currently, two official plugins are available:
+## 🎯 Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project visualizes the core concepts from `REACT_CORE_CONCEPT.md` through a hands-on demo application. Each concept is implemented as a separate component with clear examples and explanations.
 
-## React Compiler
+## 📚 Concepts Covered
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✅ Implemented
 
-## Expanding the ESLint configuration
+1. **Creating Components** - Function components, arrow functions, and component nesting
+2. **JSX** - JavaScript + XML syntax, embedding expressions, fragments, and HTML vs JSX differences
+3. **Adding Styles** - Inline styles, CSS classes, and CSS Modules comparison
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🚧 Coming Soon
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+4. Displaying Data (Props)
+5. Conditional Rendering
+6. Rendering Lists
+7. Event Handling
+8. State Management (useState)
+9. Sharing Data Between Components
+10. useEffect Hook
+11. useContext Hook
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/
+│   ├── 01-ComponentsDemo.tsx      # Creating Components
+│   ├── 02-JSXDemo.tsx             # JSX Syntax
+│   ├── 03-StylingDemo.tsx         # Styling Approaches
+│   └── StylingDemo.module.css     # CSS Modules example
+├── App.tsx                         # Main application
+├── App.css                         # Global styles
+└── main.tsx                        # Entry point
+```
+
+## 🎨 Features
+
+- **Interactive Examples** - Each concept includes working code examples
+- **Visual Demonstrations** - See React concepts in action
+- **Comparison Tables** - Understand differences between approaches
+- **Responsive Design** - Works on desktop and mobile devices
+- **TypeScript** - Full type safety throughout the application
+
+## 📖 Learning Path
+
+The demos are organized sequentially to build understanding progressively:
+
+1. Start with **Creating Components** to understand the basics
+2. Move to **JSX** to learn the syntax
+3. Explore **Adding Styles** to make components look good
+4. Continue with props, state, and hooks as they're added
+
+## 🛠️ Tech Stack
+
+- **Vite** - Fast build tool and dev server
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **CSS Modules** - Scoped styling
+- **ESLint** - Code quality
+
+## 📝 Atomic Commits
+
+This project follows atomic commit practices. Each core concept is implemented in a separate commit:
+
+- `feat: add React core concepts demo - 1. Creating Components`
+- `feat: add JSX demo - 2. JSX`
+- `feat: add styling demo - 3. Adding Styles`
+
+## 🤝 Contributing
+
+This is a learning project. Feel free to:
+
+- Add more examples
+- Improve explanations
+- Fix bugs
+- Suggest new concepts to demonstrate
+
+## 📄 License
+
+This project is part of the example-modern-react-testing repository.
+
+## 🔗 Related
+
+- [REACT_CORE_CONCEPT.md](../../REACT_CORE_CONCEPT.md) - Original concept documentation
+- [React Documentation](https://react.dev) - Official React docs
+- [Vite Documentation](https://vite.dev) - Vite build tool docs
