@@ -50,13 +50,21 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── 01-ComponentsDemo.tsx      # Creating Components
-│   ├── 02-JSXDemo.tsx             # JSX Syntax
-│   ├── 03-StylingDemo.tsx         # Styling Approaches
-│   └── StylingDemo.module.css     # CSS Modules example
-├── App.tsx                         # Main application
-├── App.css                         # Global styles
-└── main.tsx                        # Entry point
+│   ├── 01-ComponentsDemo.tsx           # Creating Components
+│   ├── 02-JSXDemo.tsx                  # JSX Syntax
+│   ├── 03-StylingDemo.tsx              # Styling Approaches
+│   ├── 04-PropsDemo.tsx                # Displaying Data (Props)
+│   ├── 05-ConditionalRenderingDemo.tsx # Conditional Rendering
+│   ├── 06-RenderingListsDemo.tsx       # Rendering Lists
+│   ├── 07-SharingDataDemo.tsx          # Sharing Data Between Components
+│   ├── 08-UseEffectDemo.tsx            # useEffect Hook
+│   ├── 09-UseContextDemo.tsx           # useContext Hook
+│   ├── 10-EventHandlingDemo.tsx        # Event Handling
+│   ├── 11-StateManagementDemo.tsx      # State Management
+│   └── StylingDemo.module.css          # CSS Modules example
+├── App.tsx                              # Main application
+├── App.css                              # Global styles
+└── main.tsx                             # Entry point
 ```
 
 ## 🎨 Features
