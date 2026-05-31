@@ -4,6 +4,7 @@ import JSXDemo from './components/02-JSXDemo';
 import StylingDemo from './components/03-StylingDemo';
 import PropsDemo from './components/04-PropsDemo';
 import ConditionalRenderingDemo from './components/05-ConditionalRenderingDemo';
+import RenderingListsDemo from './components/06-RenderingListsDemo';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <StylingDemo />
         <PropsDemo />
         <ConditionalRenderingDemo />
+        <RenderingListsDemo />
       </main>
     </div>
   );
