@@ -13,17 +13,17 @@ This project visualizes the core concepts from `REACT_CORE_CONCEPT.md` through a
 1. **Creating Components** - Function components, arrow functions, and component nesting
 2. **JSX** - JavaScript + XML syntax, embedding expressions, fragments, and HTML vs JSX differences
 3. **Adding Styles** - Inline styles, CSS classes, and CSS Modules comparison
+4. **Displaying Data (Props)** - Props basics, default props, and all prop types
+5. **Conditional Rendering** - If statements, ternary operators, logical AND, switch statements
+6. **Rendering Lists** - map() function, keys importance, interactive lists
+7. **Event Handling** - Integrated in demos (onClick, onChange, form events)
+8. **State Management** - Integrated in demos (useState hook for interactive features)
 
 ### 🚧 Coming Soon
 
-4. Displaying Data (Props)
-5. Conditional Rendering
-6. Rendering Lists
-7. Event Handling
-8. State Management (useState)
-9. Sharing Data Between Components
-10. useEffect Hook
-11. useContext Hook
+9. Sharing Data Between Components (Lifting State Up)
+10. useEffect Hook (Side effects and lifecycle)
+11. useContext Hook (Global state management)
 
 ## 🚀 Getting Started
 
