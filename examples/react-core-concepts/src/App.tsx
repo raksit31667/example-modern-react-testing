@@ -7,6 +7,7 @@ import ConditionalRenderingDemo from './components/05-ConditionalRenderingDemo';
 import RenderingListsDemo from './components/06-RenderingListsDemo';
 import SharingDataDemo from './components/07-SharingDataDemo';
 import UseEffectDemo from './components/08-UseEffectDemo';
+import UseContextDemo from './components/09-UseContextDemo';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <RenderingListsDemo />
         <SharingDataDemo />
         <UseEffectDemo />
+        <UseContextDemo />
       </main>
     </div>
   );
