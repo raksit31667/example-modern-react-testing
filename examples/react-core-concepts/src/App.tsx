@@ -5,6 +5,7 @@ import StylingDemo from './components/03-StylingDemo';
 import PropsDemo from './components/04-PropsDemo';
 import ConditionalRenderingDemo from './components/05-ConditionalRenderingDemo';
 import RenderingListsDemo from './components/06-RenderingListsDemo';
+import SharingDataDemo from './components/07-SharingDataDemo';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <PropsDemo />
         <ConditionalRenderingDemo />
         <RenderingListsDemo />
+        <SharingDataDemo />
       </main>
     </div>
   );
