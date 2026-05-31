@@ -1,3 +1,8 @@
 export function ThemeToggle() {
-  return <button>Toggle Theme</button>
+  return (
+    <button>
+      <span>🌙</span>
+      <span>Dark Mode</span>
+    </button>
+  )
 }
