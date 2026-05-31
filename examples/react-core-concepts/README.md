@@ -8,7 +8,7 @@ This project visualizes the core concepts from `REACT_CORE_CONCEPT.md` through a
 
 ## 📚 Concepts Covered
 
-### ✅ Implemented
+### ✅ Implemented (All 11 Core Concepts!)
 
 1. **Creating Components** - Function components, arrow functions, and component nesting
 2. **JSX** - JavaScript + XML syntax, embedding expressions, fragments, and HTML vs JSX differences
@@ -18,12 +18,9 @@ This project visualizes the core concepts from `REACT_CORE_CONCEPT.md` through a
 6. **Rendering Lists** - map() function, keys importance, interactive lists
 7. **Event Handling** - Integrated in demos (onClick, onChange, form events)
 8. **State Management** - Integrated in demos (useState hook for interactive features)
-
-### 🚧 Coming Soon
-
-9. Sharing Data Between Components (Lifting State Up)
-10. useEffect Hook (Side effects and lifecycle)
-11. useContext Hook (Global state management)
+9. **Sharing Data Between Components** - Lifting state up pattern with e-commerce cart example
+10. **useEffect Hook** - Side effects, cleanup, API calls, timers, and dependency arrays
+11. **useContext Hook** - Global state management, theme context, avoiding prop drilling
 
 ## 🚀 Getting Started
 
