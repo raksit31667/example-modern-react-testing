@@ -5,11 +5,11 @@ import StylingDemo from './components/03-StylingDemo';
 import PropsDemo from './components/04-PropsDemo';
 import ConditionalRenderingDemo from './components/05-ConditionalRenderingDemo';
 import RenderingListsDemo from './components/06-RenderingListsDemo';
-import SharingDataDemo from './components/07-SharingDataDemo';
-import UseEffectDemo from './components/08-UseEffectDemo';
-import UseContextDemo from './components/09-UseContextDemo';
-import EventHandlingDemo from './components/10-EventHandlingDemo';
-import StateManagementDemo from './components/11-StateManagementDemo';
+import SharingDataDemo from './components/09-SharingDataDemo';
+import UseEffectDemo from './components/10-UseEffectDemo';
+import UseContextDemo from './components/11-UseContextDemo';
+import EventHandlingDemo from './components/07-EventHandlingDemo';
+import StateManagementDemo from './components/08-StateManagementDemo';
 
 function App() {
   return (
