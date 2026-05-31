@@ -6,6 +6,7 @@ import PropsDemo from './components/04-PropsDemo';
 import ConditionalRenderingDemo from './components/05-ConditionalRenderingDemo';
 import RenderingListsDemo from './components/06-RenderingListsDemo';
 import SharingDataDemo from './components/07-SharingDataDemo';
+import UseEffectDemo from './components/08-UseEffectDemo';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <ConditionalRenderingDemo />
         <RenderingListsDemo />
         <SharingDataDemo />
+        <UseEffectDemo />
       </main>
     </div>
   );
