@@ -212,6 +212,62 @@ body {
   background: #7b1fa2;
 }
 
+/* Conditional Rendering Demo */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn.active {
+  background: #4caf50;
+  color: white;
+}
+
+.btn:not(.active) {
+  background: #ccc;
+  color: #666;
+}
+
+.status-loading {
+  padding: 15px;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 5px;
+  color: #856404;
+  font-weight: bold;
+}
+
+.status-success {
+  padding: 15px;
+  background: #d4edda;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  color: #155724;
+  font-weight: bold;
+}
+
+.status-error {
+  padding: 15px;
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  color: #721c24;
+  font-weight: bold;
+}
+
+.status-idle {
+  padding: 15px;
+  background: #d1ecf1;
+  border: 2px solid #17a2b8;
+  border-radius: 5px;
+  color: #0c5460;
+  font-weight: bold;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app-header h1 {
