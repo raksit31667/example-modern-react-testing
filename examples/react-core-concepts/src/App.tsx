@@ -8,6 +8,8 @@ import RenderingListsDemo from './components/06-RenderingListsDemo';
 import SharingDataDemo from './components/07-SharingDataDemo';
 import UseEffectDemo from './components/08-UseEffectDemo';
 import UseContextDemo from './components/09-UseContextDemo';
+import EventHandlingDemo from './components/10-EventHandlingDemo';
+import StateManagementDemo from './components/11-StateManagementDemo';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <PropsDemo />
         <ConditionalRenderingDemo />
         <RenderingListsDemo />
+        <EventHandlingDemo />
+        <StateManagementDemo />
         <SharingDataDemo />
         <UseEffectDemo />
         <UseContextDemo />
