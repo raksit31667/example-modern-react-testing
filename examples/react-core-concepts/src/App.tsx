@@ -2,6 +2,7 @@ import './App.css';
 import ComponentsDemo from './components/01-ComponentsDemo';
 import JSXDemo from './components/02-JSXDemo';
 import StylingDemo from './components/03-StylingDemo';
+import PropsDemo from './components/04-PropsDemo';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <ComponentsDemo />
         <JSXDemo />
         <StylingDemo />
+        <PropsDemo />
       </main>
     </div>
   );
