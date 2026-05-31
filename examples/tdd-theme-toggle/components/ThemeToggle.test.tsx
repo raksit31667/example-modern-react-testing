@@ -9,4 +9,12 @@ describe('ThemeToggle', () => {
     const button = screen.getByRole('button')
     expect(button).toBeInTheDocument()
   })
+
+  it('should display light mode icon and text by default', () => {
+    render(<ThemeToggle />)
+    
+    const button = screen.getByRole('button')
+    expect(button).toHaveTextContent('🌙')
+    expect(button).toHaveTextContent('Dark Mode')
+  })
 })
