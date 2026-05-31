@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState, ReactNode } from 'react'
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
 type Theme = 'light' | 'dark'
 
@@ -13,6 +13,13 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light')
+
+  useEffect(() => {
+    // Apply theme to document root
+    document.documentElement.setAttribute('data-theme', theme)
+    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.add(theme)
+  }, [theme])
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))

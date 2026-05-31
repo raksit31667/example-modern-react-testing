@@ -17,7 +17,11 @@ describe('ThemeToggle', () => {
   })
 
   it('should display dark mode icon and text by default', () => {
-    render(<ThemeToggle />)
+    render(
+      <ThemeProvider>
+        <ThemeToggle />
+      </ThemeProvider>
+    )
     
     const button = screen.getByRole('button')
     expect(button).toHaveTextContent('🌙')
